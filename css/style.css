@@ -1,5 +1,6 @@
 :root{
     --main-color: #5995fd;
+    font-size: 12px;
 }
 
 body{
@@ -40,7 +41,7 @@ body{
     --sign-in-top : 25vh;
     --sign-up-caption-left: 50%;
     --sign-in-caption-left: 50%;
-    --sign-up-caption-top: 100vh;
+    --sign-up-caption-top: 95vh;
     --sign-in-caption-top: 0%;
     --sign-in-img-left: 5%;
     --sign-up-img-left: 58%;
