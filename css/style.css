@@ -18,7 +18,7 @@ body{
     --sign-up-top : 50%;
     --sign-up-caption-left: 50%;
     --sign-in-caption-left: 50%;
-    --sign-up-caption-top: 70vh;
+    --sign-up-caption-top: 65vh;
     --sign-in-caption-top: -30vh;
     --sign-in-img-left: 5%;
     --sign-up-img-left: 58%;
@@ -34,14 +34,13 @@ body{
     --circle-right: 50%;
     --circle-translate-x: 50%;
     --circle-translate-y: -88%;
-   
     --form-left: 50%;
     --form-top: 30%;
     --sign-up-top : -200%;
     --sign-in-top : 25vh;
     --sign-up-caption-left: 50%;
     --sign-in-caption-left: 50%;
-    --sign-up-caption-top: 95vh;
+    --sign-up-caption-top: 100vh;
     --sign-in-caption-top: 0%;
     --sign-in-img-left: 5%;
     --sign-up-img-left: 58%;
@@ -69,6 +68,12 @@ body{
     transition: 1.3s .8s;
 }
 
+.input-group,
+.alert{
+    width: 80%;
+    margin: auto;
+}
+
 input{
     padding-block: 12px !important;
 }
@@ -83,7 +88,7 @@ section{
 
 .sign-in-caption p,
 .sign-up-caption p{
-    width: 60%;
+    width: 40%;
 }
 
 form{

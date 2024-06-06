@@ -73,6 +73,11 @@
     :root{
         font-size: 16px;
     }
+
+    .input-group,
+    .alert{
+        width: 100%;
+    }
 }
 
 /* lg */
