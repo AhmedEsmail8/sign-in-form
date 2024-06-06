@@ -1,0 +1,201 @@
+:root{
+    --main-color: #5995fd;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.sign-up-mode{
+    --circle-top: 100%;
+    --circle-right: 50%;
+    --circle-translate-x: 50%;
+    --circle-translate-y: -12%;
+    --form-left: 50%;
+    --form-top: 50%;
+    --sign-in-top : -200%;
+    --sign-up-top : 50%;
+    --sign-up-caption-left: 50%;
+    --sign-in-caption-left: 50%;
+    --sign-up-caption-top: 70vh;
+    --sign-in-caption-top: -30vh;
+    --sign-in-img-left: 5%;
+    --sign-up-img-left: 58%;
+    --sign-in-img-top: -50%;
+    --sign-up-img-top: 60%;
+    --forms-left: 0px;
+    --captions-left: 0px;
+    --forms-top: 0px;
+}
+
+.sign-in-mode{
+    --circle-top: 0%;
+    --circle-right: 50%;
+    --circle-translate-x: 50%;
+    --circle-translate-y: -88%;
+   
+    --form-left: 50%;
+    --form-top: 30%;
+    --sign-up-top : -200%;
+    --sign-in-top : 25vh;
+    --sign-up-caption-left: 50%;
+    --sign-in-caption-left: 50%;
+    --sign-up-caption-top: 100vh;
+    --sign-in-caption-top: 0%;
+    --sign-in-img-left: 5%;
+    --sign-up-img-left: 58%;
+    --sign-in-img-top: 8%;
+    --sign-up-img-top: 110%;
+    --forms-left: 0px;
+    --captions-left: 50%;
+    --forms-top: 40vh;
+}
+
+
+.sign-in{
+    top: var(--sign-in-top);
+}
+
+.sign-up{
+    top: var(--sign-up-top);
+}
+
+.forms{
+    width: 100%;
+    height: 70vh;
+    left: var(--forms-left);
+    top: var(--forms-top);
+    transition: 1.3s .8s;
+}
+
+input{
+    padding-block: 12px !important;
+}
+
+section{
+    width: 100%;
+}
+
+.captions{
+    left: var(--captions-left);
+}
+
+.sign-in-caption p,
+.sign-up-caption p{
+    width: 60%;
+}
+
+form{
+    width: 100vh;
+    max-width: 400px;
+    position: absolute;
+    left: var(--form-left);
+    transform: translate(-50%, -50%);
+    transition: left 1.3s .8s, top 0s .8s;
+}
+
+.sign-up-caption{
+    left: var(--sign-up-caption-left);
+    top: var(--sign-up-caption-top);
+    transform: translateX(-50%);
+    transition: all 0.7s 0.4s ease-in-out;
+    min-width: 750px;
+    width: 50%;
+    margin-top: 50px;
+    z-index: 10;
+}
+
+.sign-in-caption{
+    left: var(--sign-in-caption-left);
+    top: var(--sign-in-caption-top);
+    transform: translateX(-50%);
+    min-width: 750px;
+    transition: all 0.7s 0.4s ease-in-out;
+    z-index: 10;
+    width: 50%;
+    margin-top: 50px;
+}
+
+.sign-in-img{
+    z-index: 11;
+    top: var(--sign-in-img-top);
+    left: var(--sign-in-img-left);
+    transition: all 1.1s 0.4s ease-in-out;
+    width: 35%;
+    display: none;
+}
+
+.sign-up-img{
+    z-index: 11;
+    top: var(--sign-up-img-top);
+    left: var(--sign-up-img-left);
+    transition: all 1.1s 0.4s ease-in-out;
+    width: 35%;
+    display: none;
+}
+
+.circle{
+    width: 2000px;
+    min-height: 2000px;
+    border-radius: 50%;
+    background-image: linear-gradient(-45deg, #4481eb 0%, #04befe 100%);
+    z-index: 9;
+    top: var(--circle-top);
+    right: var(--circle-right);
+    transform: translate(var(--circle-translate-x), var(--circle-translate-y));
+    transition: 1.2s ease-in-out;
+}
+
+form h2{
+    color: #000000bc;
+    font-size: 2.5rem;
+}
+
+.form-control:focus{
+    box-shadow: none !important;
+}
+
+.input-group{
+    background-color: #F0F0F0;
+}
+
+.btn-primary {
+    border: none !important;
+    --bs-btn-bg: var(--main-color);
+    --bs-btn-hover-bg: #4d84e2;
+}
+
+.btn-primary:hover{
+    border: none !important;
+}
+
+form button{
+    font-size: .8rem;
+}
+
+form ul li{
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+form ul li:hover{
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+input::placeholder{
+    color: #acacac !important;
+    font-weight: 500;
+
+}
+
+.btn-outline-primary {
+    --bs-btn-bg: transparent;
+    --bs-btn-hover-bg: transparent;
+}

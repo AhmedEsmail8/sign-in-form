@@ -1,0 +1,147 @@
+/* sm */
+@media (min-width: 576px) {
+
+    
+}
+
+/* md */
+@media (min-width: 768px) {
+    .sign-up-mode{
+        --circle-top: 190%;
+        --circle-right: 200%;
+        --sign-up-caption-left: 30%;
+        --sign-in-caption-left: 65%;
+        --sign-up-caption-top: 70vh;
+        --circle-translate-x: 100%;
+        --circle-translate-y: -50%;
+    }
+    
+    .sign-in-mode{
+        --circle-top: -90%;
+        --circle-right: -90%;
+        --form-top: 50%;
+        --sign-in-top : 50%;
+        --sign-up-caption-left: 30%;
+        --sign-in-caption-left: 65%;
+        --sign-in-caption-top: 0%;
+        --circle-translate-x: 0%;
+        --circle-translate-y: -50%;
+    }
+
+
+    .forms{
+        width: 100%;
+        height: 60vh;
+    }
+    
+
+
+    .sign-in-caption p,
+    .sign-up-caption p{
+        width: 60%;
+    }
+
+    .sign-in-caption,
+    .sign-up-caption{
+        width: 50%;
+        margin-top: 50px;
+        transform: translateX(-50%);
+        transition: all 0.7s 0.6s ease-in-out;
+    }
+
+    .circle{
+        transition: 1.5s ease-in-out;
+    }
+
+    :root{
+        font-size: 16px;
+    }
+
+    .sign-in-img,
+    .sign-up-img{
+        display: block;
+    }
+
+    .forms{
+        transition: 1.3s .8s;
+    }
+
+    form{
+        transition: left 1.3s .8s, top 0s 1s;
+    }
+}
+
+/* lg */
+@media (min-width: 992px) {
+    .sign-up-mode{
+        --circle-top: -10%;
+        --circle-right: 52%;
+        --sign-up-caption-left: 75%;
+        --sign-in-caption-left: -55%;
+        --sign-up-caption-top: 10%;
+        --sign-in-caption-top: 10%;
+        --sign-in-img-left: -50%;
+        --sign-in-img-top: 40%;
+        --sign-up-img-top: 35%;
+        --captions-left: 50%;
+    }
+    
+    .sign-in-mode{
+        --circle-top: -10%;
+        --circle-right: 48%;
+        --sign-up-caption-left: 200%;
+        --sign-in-caption-left: 25%;
+        --sign-up-caption-top: 10%;
+        --sign-in-caption-top: 10%;
+        --sign-up-img-left: 230%;
+        --sign-in-img-top: 40%;
+        --sign-up-img-top: 35%;
+        --forms-left: 50%;
+        --captions-left:0px;
+        --forms-top: 0px;
+    }
+
+    
+    .forms{
+        width: 50%;
+        height: 100vh;
+    }
+
+    .sign-in-caption p,
+    .sign-up-caption p{
+        width: 60%;
+    }
+
+    .sign-in-caption,
+    .sign-up-caption{
+        width: 50%;
+        margin-top: 50px;
+        transform: translateX(-50%);
+        transition: all 0.9s 0.6s ease-in-out;
+    }
+
+    :root{
+        font-size: 16px;
+    }
+
+    .circle{
+        transition: 1.8s ease-in-out;
+    }
+
+    .input-group{
+        padding: 5px;
+    }
+}
+
+/* xl */
+@media (min-width: 1200px) {
+    .sign-in-caption p,
+    .sign-up-caption p{
+        width: 75%;
+    }
+}
+
+/* xxl */
+@media (min-width: 1400px) {
+
+}

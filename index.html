@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>sign in</title>
+</head>
+<body class="overflow-hidden sign-in-mode vw-100 vh-100">
+    <img src="images/log.svg" class="sign-in-img position-absolute">
+    <img src="images/register.svg" class="sign-up-img position-absolute">
+    <div class="circle position-absolute"></div>
+
+    <section class="position-relative vh-100 vw-100 overflow-hidden">
+        <div class="sign-up-caption text-center text-white position-absolute">
+            <h2 class="fw-bold fs-4">One of us?</h2>
+            <p class="mx-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque dolores ut nemo adipisci eligendi!</p>
+            <button class="btn btn-outline-primary rounded-pill text-white border-white border-2 px-4 text-uppercase toggle-btn fw-semibold"> Sign in</button>
+        </div>
+        <div class="sign-in-caption text-center text-white position-absolute">
+            <h2 class="fw-bold fs-4">New here?</h2>
+            <p class="mx-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque dolores ut nemo adipisci eligendi!</p>
+            <button class="btn btn-outline-primary rounded-pill text-white border-white border-2 px-4 text-uppercase toggle-btn"> Sign up</button>
+            
+        </div>
+        
+        <div class="overflow-hidden forms position-absolute">
+            <div>
+                <form class="sign-in z-3 text-center">
+                    <h2 class="fw-bolder mb-3">Sign in</h2>
+                    <div class="inputs">
+                        <div class="input-group mb-3 rounded-pill">
+                            <span class="input-group-text ms-3 ms-md-1 border-0 bg-transparent" id="inputGroup-sizing-default"><i class="fa-solid fa-envelope" style="color: #acacac;"></i></span>
+                            <input type="email" id="email" name="email" placeholder="Email" class="form-control border-0 bg-transparent" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <div class="input-group mb-3 rounded-pill">
+                            <span class="input-group-text ms-3 ms-md-1 border-0 bg-transparent" id="inputGroup-sizing-default"><i class="fa-solid fa-lock" style="color: #acacac;"></i></span>
+                            <input type="password" id="password" name="password" placeholder="Password" class="form-control border-0 bg-transparent" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <div class="sign-in-alert d-none alert p-2 alert-danger d-flex justify-content-start align-items-center" role="alert">
+                            <p class="m-0">wrong email or password!</p>
+                        </div>
+                    </div>  
+                    <button class="btn btn-primary rounded-pill px-5 py-2 fw-bold" id="login-btn">LOGIN</button>
+                    <span class="d-block my-3">Or sign in with social platforms</span>
+                    <ul class="social-media-icons list-unstyled d-flex align-items-center justify-content-center column-gap-3">
+                        <li><i class="fa-brands fa-facebook-f"></i></li>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li><i class="fa-brands fa-google"></i></li>
+                        <li><i class="fa-brands fa-linkedin-in"></i></li>
+                    </ul>
+                </form>
+                <form class="sign-up text-center">
+                    <h2 class="fw-bolder mb-3">Sign up</h2>
+                    <div class="input-group mb-3 rounded-pill">
+                        <span class="input-group-text ms-3 ms-md-1 border-0 bg-transparent" id="inputGroup-sizing-default"><i class="fa-solid fa-user" style="color: #acacac;"></i></span>
+                        <input type="text" id="sign-up-name" name="sign-up-name" placeholder="Username" class="form-control border-0 bg-transparent" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <div class="name-alert d-none alert p-2 alert-danger d-flex justify-content-start align-items-center" role="alert">
+                        <p class="m-0">Username required!</p>
+                    </div>
+                    <div class="input-group mb-3 rounded-pill">
+                        <span class="input-group-text ms-3 ms-md-1 border-0 bg-transparent" id="inputGroup-sizing-default"><i class="fa-solid fa-envelope" style="color: #acacac;"></i></span>
+                        <input type="email" id="sign-up-email" name="sign-up-email" placeholder="Email" class="form-control border-0 bg-transparent" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <div class="email-alert d-none alert p-2 alert-danger d-flex justify-content-start align-items-center" role="alert">
+                        <p class="m-0"></p>
+                    </div>
+                    <div class="input-group mb-3 rounded-pill">
+                        <span class="input-group-text ms-3 ms-md-1 border-0 bg-transparent" id="inputGroup-sizing-default"><i class="fa-solid fa-lock" style="color: #acacac;"></i></span>
+                        <input type="password" id="sign-up-password" name="sign-up-password" placeholder="Password" class="form-control border-0 bg-transparent" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <div class="password-alert d-none alert p-2 alert-danger d-flex justify-content-start align-items-center" role="alert">
+                        <p class="m-0"></p>
+                    </div>
+                    <button class="btn btn-primary rounded-pill px-5 py-2 fw-bold" id="sign-up-btn">SIGN UP</button>
+                    <span class="d-block my-3">Or sign in with social platforms</span>
+                    <ul class="social-media-icons list-unstyled d-flex align-items-center justify-content-center column-gap-3">
+                        <li><i class="fa-brands fa-facebook-f"></i></li>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li><i class="fa-brands fa-google"></i></li>
+                        <li><i class="fa-brands fa-linkedin-in"></i></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
