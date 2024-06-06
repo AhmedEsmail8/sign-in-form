@@ -7,25 +7,24 @@
 /* md */
 @media (min-width: 768px) {
     .sign-up-mode{
-        --circle-top: 190%;
-        --circle-right: 200%;
         --sign-up-caption-left: 30%;
         --sign-in-caption-left: 65%;
-        --sign-up-caption-top: 70vh;
-        --circle-translate-x: 100%;
-        --circle-translate-y: -50%;
+        --sign-up-caption-top: unset;
+        --sign-up-caption-bottom: 50px;
+        --circle-translate-x: 40%;
+        --circle-translate-y: -13%;
     }
     
     .sign-in-mode{
-        --circle-top: -90%;
-        --circle-right: -90%;
         --form-top: 50%;
         --sign-in-top : 50%;
         --sign-up-caption-left: 30%;
         --sign-in-caption-left: 65%;
         --sign-in-caption-top: 0%;
-        --circle-translate-x: 0%;
-        --circle-translate-y: -50%;
+        --circle-translate-x: 60%;
+        --circle-translate-y: -88%;
+        --sign-up-caption-top: unset;
+        --sign-up-caption-bottom: -300px;
     }
 
 
@@ -93,9 +92,13 @@
         --sign-in-img-top: 40%;
         --sign-up-img-top: 35%;
         --captions-left: 50%;
-    }
-    
-    .sign-in-mode{
+        --circle-translate-x: 100%;
+        --circle-translate-y: -50%;
+        }
+        
+        .sign-in-mode{
+        --circle-translate-x: 0%;
+        --circle-translate-y: -50%;
         --circle-top: -10%;
         --circle-right: 48%;
         --sign-up-caption-left: 200%;
@@ -144,10 +147,7 @@
 
 /* xl */
 @media (min-width: 1200px) {
-    .sign-in-caption p,
-    .sign-up-caption p{
-        width: 75%;
-    }
+
 }
 
 /* xxl */

@@ -18,12 +18,13 @@ body{
     --sign-up-top : 50%;
     --sign-up-caption-left: 50%;
     --sign-in-caption-left: 50%;
-    --sign-up-caption-top: 65vh;
+    --sign-up-caption-top: 70%;
+    --sign-up-caption-bottom: unset;
     --sign-in-caption-top: -30vh;
     --sign-in-img-left: 5%;
     --sign-up-img-left: 58%;
     --sign-in-img-top: -50%;
-    --sign-up-img-top: 60%;
+    --sign-up-img-top: 70%;
     --forms-left: 0px;
     --captions-left: 0px;
     --forms-top: 0px;
@@ -41,6 +42,7 @@ body{
     --sign-up-caption-left: 50%;
     --sign-in-caption-left: 50%;
     --sign-up-caption-top: 100vh;
+    --sign-up-caption-bottom: unset;
     --sign-in-caption-top: 0%;
     --sign-in-img-left: 5%;
     --sign-up-img-left: 58%;
@@ -58,6 +60,7 @@ body{
 
 .sign-up{
     top: var(--sign-up-top);
+    
 }
 
 .forms{
@@ -103,6 +106,7 @@ form{
 .sign-up-caption{
     left: var(--sign-up-caption-left);
     top: var(--sign-up-caption-top);
+    bottom: var(--sign-up-caption-bottom);
     transform: translateX(-50%);
     transition: all 0.7s 0.4s ease-in-out;
     min-width: 750px;
